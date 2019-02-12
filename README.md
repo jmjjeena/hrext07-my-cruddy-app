@@ -5,7 +5,7 @@ Just being able to write down anything as an exercise of reflection is a incredi
 
 notemyday is a lightweight, simplified journal/diary app.
 
-## [Tasks]
+## Tasks
 
 ### Basic Reqs
 - [ ] Where to store data? (localstorage)
