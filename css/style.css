@@ -1,0 +1,19 @@
+body {
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	color: black;
+	font-size: 14px;
+	line-height: 20px;
+	background-color: #49d5f0;
+}
+
+header {
+	display: block;
+	font-family: 'Droid Sans', sans-serif;
+	letter-spacing: 2px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 5px;
+	font-size: 45px;
+	font-weight: bold;
+	color: hsla(0 , 0%, 100%, .91);
+}
