@@ -8,11 +8,11 @@ notemyday is a lightweight, simplified journal/diary app.
 ## Tasks
 
 ### Basic Reqs
-- [ ] Where to store data? (localstorage)
-- [ ] How to caputure data? (web form) - text box which allows the user to log their day with date & time stamp
-- [ ] How to modify data? (submit action, delete action, assort action)
-- [ ] How to view data? (style?) - newest on the top.
-- [ ] UI/UX considerations (how are we going to use this)
+- [√] Where to store data? (localstorage)
+- [√] How to caputure data? (web form) - text box which allows the user to log their day with date & time stamp
+- [√] How to modify data? (submit action, delete action, assort action)
+- [√] How to view data? (style?) - newest on the top.
+- [√] UI/UX considerations (how are we going to use this)
 
 ### Advanced Reqs
 - [ ] Add user login page
