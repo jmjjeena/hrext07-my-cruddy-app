@@ -18,7 +18,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: #555;
   line-height: 1.5;
-  background-color: #49d5f0;
+  background-color: #aee2e8;
 }
 
 
@@ -46,6 +46,7 @@ button, input {
 }
 
 button,input[type=submit]{
+  border:none;
   color:#fff;
   background:#49d5f0;
   text-transform:uppercase;
@@ -70,6 +71,7 @@ button:hover,input[type=submit]:hover{
 }
 
 button.entry-button,input.entry-button{
+  border: none;
   margin-bottom:20px;
   font-weight: bold;
 }
@@ -153,16 +155,35 @@ textarea::placeholder {
   width: 100%;
   flex-wrap: nowrap;
   flex-direction: row;
-  justify-content: space-around;
-  background: green;
-  word-wrap: break-word;
-  margin-top: 10px
+  justify-content: space-between;
+  margin-top: 10px;
+  background: #20a4ccbf;
 
+}
+.note-text-date {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+h5{
+  margin: 0px 15px;
 }
 
 .main-flex-container {
   max-width: 800px;
   padding: 80px 5% 0;
+}
+
+
+#delete {
+  border: none;
+  background: #de443b;
+}
+
+#delete:hover  {
+  background: #FF4136;
+  border:none;
 }
 
 

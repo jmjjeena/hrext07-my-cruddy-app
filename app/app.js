@@ -87,7 +87,13 @@ let showNotes = function(notesArray) {
 }
 
 let addNoteToNmdNotes = function(entry){
-  let entryElement = `<div id="${entry.id}" class = "note"><h1 class="flex note_text">${entry.text}</h1><h5 class="flex">${entry.timeStamp}</h5> <button class="flex" id="delete" data-noteid=${entry.id}>Delete</button></div>`
+  let entryElement = `<div id="${entry.id}" class = "note">
+    <div class="flex note-text-date">
+      <h1 class="flex note_text">${entry.text}</h1>
+      <h5 class="flex">${entry.timeStamp}</h5>
+    </div>
+    <button class="flex" id="delete" data-noteid=${entry.id}>Delete</button>
+  </div>`
   $('#all-entries').prepend(entryElement)
 }
 
