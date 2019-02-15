@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>HREXT07 R00lz!</title>
+  <title>HREXT07 CRUD App!</title>
   <script
           src="https://code.jquery.com/jquery-3.3.1.js"
           integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
           crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
   <script src="app/app.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-
-
   <!--
-
 √ create container
 √ create button
 √ input field
@@ -23,20 +22,22 @@
 container for the response-feedback (start with alert)
 -->
 </head>
+
 <body>
 
-<div class="main-cotainer">
-  <header>notemyday</header>
-  <div class="container-form">
-    <input type="text" class="input-key" placeholder="How was your day?">
-    <!-- <input type="text" class="input-value" placeholder="enter value"> -->
-    <button class="btn-add">Add</button>
-<!--     <button class="btn-update">Update</button>
-    <button class="btn-delete">Delete</button>
-    <button class="btn-clear">Clear</button> -->
-  </div>
-  <div class="container-data"></div>
-</div>
+<nav class = "navigation-bar">
+  <h1><span class = "app-name">notemyday</span></h1>
+</nav>
 
+<section class = "main-container">
+  <form class = "new-entry">
+    <div class = "diary-entry">
+      <textarea id = "first-post" class = "input-textarea" placeHolder = "How was your day?"></textarea>
+    </div>
+    <button class = "submit-button" type = "submit">Add</button>
+  </form>
+</section>
 </body>
 </html>
+
+
