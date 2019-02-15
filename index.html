@@ -10,33 +10,27 @@
           crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
   <script src="app/app.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Roboto" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <!--
-√ create container
-√ create button
-√ input field
-√ container to display text
-√ update button(or maybe click on the container item)
-√ delete button
-container for the response-feedback (start with alert)
--->
 </head>
 
 <body>
 
-<nav class = "navigation-bar">
-  <h1><span class = "app-name">notemyday</span></h1>
-</nav>
+  <nav class = "navigation-bar">
+    <h1><span class = "app-name">notemyday</span></h1>
+  </nav>
 
-<section class = "main-container">
-  <form class = "new-entry">
-    <div class = "diary-entry">
-      <textarea id = "first-post" class = "input-textarea" placeHolder = "How was your day?"></textarea>
-    </div>
-    <button class = "submit-button" type = "submit">Add</button>
-  </form>
-</section>
+  <section class = "flex-container main-flex-container">
+    <form class = "new-entry">
+      <div class = "diary-entry">
+        <textarea id = "first-post" class = "input-textarea" cols="37"  wrap="hard" placeHolder = "How was your day?"></textarea>
+      </div>
+      <button class = "entry-button submit-button" type = "submit">Add</button>
+    </form>
+    <div class = "entries flex-container" id = "all-entries"></div>
+  </section>
+
+  <footer></footer>
 </body>
 </html>
 
