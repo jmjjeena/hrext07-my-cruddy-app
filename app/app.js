@@ -87,11 +87,11 @@ let showNotes = function(notesArray) {
 };
 
 let addNoteToNmdNotes = function(entry) {
-  let entryElement = `<div> 
+  let entryElement = `<div class = "nmd-container"> 
                         <ul>
                           <li id="${entry.id}" class = "note note-text-date">
-                              <p class="flex note_text">${entry.text}</p>
-                              <p class="flex ">${entry.timeStamp}</p>
+                              <p class="flex note-text">${entry.text}</p>
+                              <p class="flex time-text">${entry.timeStamp}</p>
                             </div>
                             <button class="delete-button" data-noteid=${entry.id}>Delete</button>
                             </li>

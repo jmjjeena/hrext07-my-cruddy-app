@@ -25,7 +25,7 @@ body {
 
 /* Typography */
 h1 {
-  font-family: 'Roboto', sans-serif;;
+  font-family: 'Roboto', sans-serif;
   font-weight: 800;
   font-size: 2.5rem;
   letter-spacing: 0.03rem;
@@ -36,12 +36,13 @@ h1 {
 }
 
 p {
-  margin-bottom: 0;
+  width: 95%;
+  margin-bottom: 4px;
   padding-bottom: 3px;
-  padding-top: 1px;
+  padding-top: 10px;
   font-weight: 300;
   display: inline-block;
-  font-size: 1.1em;
+  font-size: 1em;
   margin: 0px 15px;
   text-align: justify;
 }
@@ -57,6 +58,32 @@ ul {
 
 li {
   margin-right: 10px;
+}
+
+.note {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 10px;
+  background: #eff3f9;
+}
+
+.note-text-date {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.time-text {
+  color: #268ba3;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 5px;
 }
 
 /* Forms */
@@ -159,27 +186,11 @@ textarea::placeholder {
   color:#999;
 }
 
-.note {
-  display: flex;
-  width: 100%;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 10px;
-  background: #eff3f9;
-
-}
-.note-text-date {
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-  align-content: space-between;
-}
-
 .delete-button {
   width: 100px;
   color: #aaa;
-  border-color: #268ba3
+  border-color: #268ba3;
+  text-transform: uppercase;
   margin-bottom: 40px;
   background: #fff;
 }
@@ -200,20 +211,55 @@ textarea::placeholder {
   min-width: 300px;
 }
 
+.main-flex-container {
+  max-width: 800px;
+  padding: 80px 5% 0;
+}
+
 .flex {
   display: flex
   border-radius: 5px;
   font-size: 1em;
 }
 
-.main-flex-container {
-  max-width: 800px;
-  padding: 80px 5% 0;
+.nmd-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  border-radius: 5px;
+  font-size: 1em;
+  text-align: left;
+  width: 825px;
+  padding-right: 100px;
+
 }
 
 
+/* Responsive */
+@media only screen and (max-width:430px) {
+  
+  button.entry-button,
+  input.entry-button,
+  button,
+  input[type=submit],
+  .delete-button{
+    min-height:48px;
+  }
 
-
+  .flex-container{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    -ms-flex-direction:column;
+    flex-direction:column;
+    margin:auto;
+    font-size:1em;
+    text-align:left;
+    min-width:300px;
+  }
+}
 
 
 
